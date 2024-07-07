@@ -1,0 +1,946 @@
+/* Main Tags, Common Buttons and Cards  */
+body {
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#upcomingServices {
+    padding: red;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p,
+h4,
+h5,
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.buttonSmall {
+    background-color: rgb(123, 125, 126);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 7vh;
+    width: 17vh;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding-left: 5px;
+    background-color: #c3bb93;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #686464;
+    margin: 2vh;
+    border: none;
+    height: 5vh;
+}
+
+.buttonSmall:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.30);
+    background-color: #022045;
+    color: white;
+}
+
+.buttonSmall:active {
+    background-color: #003a80;
+}
+
+.buttonMain {
+    padding-left: 5px;
+    width: 25vh;
+    background-color: #ced3d6fd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(104, 100, 100);
+    margin: 2vh;
+    border: none;
+    height: 5vh;
+}
+
+.buttonMain:hover {
+    box-shadow: 0 0 10px rgb(25, 24, 24);
+    background-color: #c3bb93;
+}
+
+table {
+    border-spacing: 40px;
+    align-self: center;
+    height: 75%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.container {
+
+    padding-top: 13vh;
+    background-image: url("http://localhost:3333/?jpg=cleansup.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    transition: 0.3s;
+    margin-top: center;
+
+}
+
+
+.Cards {
+    height: 10%;
+    width: 55vh;
+    vertical-align: middle;
+    background: rgb(250, 255, 255, 0.4);
+    padding: 3%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.35);
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.Cards li {
+    list-style: none;
+    text-align: left;
+    color: black;
+}
+
+.Cards h3 {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-right: 15%;
+}
+
+
+.Cards:hover {
+    background: #6cacd5;
+}
+
+
+.HeaderTop {
+    padding-top: 7%;
+    height: 60%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    overflow-y: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/*Footer*/
+.icons {
+    width: 20px;
+}
+
+.footer {
+    height: 3%;
+    padding: 4%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0%;
+
+}
+
+.footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 80px;
+    position: relative;
+}
+
+.footer a,
+p {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.logoFooter {
+    vertical-align: middle;
+    width: 200px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Navigation Bar- i.e., Header */
+.navBar {
+    position: fixed;
+    height: 16%;
+    width: 100%;
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+
+}
+
+
+.navBar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 35px;
+    position: relative;
+}
+
+.navBar ul li img {
+    vertical-align: middle;
+    width: 200px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#listLine {
+    list-style: circle;
+}
+
+.menu ::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    transition: 0.5s;
+}
+
+.menu :hover::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+}
+
+
+.signin {
+    padding-left: 20%;
+}
+
+
+#profpic {
+    margin-left: 50%;
+    margin-bottom: 20%;
+    width: 40px;
+}
+
+#profpic:hover {
+    box-shadow: 0 7px 30px rgb(255, 255, 255, 0.45);
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Services Page */
+
+.containerServices {
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    transition: 0.3s;
+    margin-top: center;
+
+}
+.containerServices  h4{
+    color: black;
+}
+
+#ServiceHeader {
+    background-image: url(http://localhost:3333/?jpeg=wallPainting.jpeg);
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Home Page */
+#MicaPromo {
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-size: cover;
+    padding-top: 16vh;
+    background-color: rgba(255, 255, 255, 0.80);
+    transition: background-color 0.3s;
+    width: 35%;
+    font-size: medium;
+    color: black;
+    height: 600px;
+    overflow-x: hidden;
+
+}
+
+#MicaPromo h1 {
+    margin-left: 9vh;
+    margin-right: 7vh;
+    margin-top: 20%;
+    font-size: 7vh;
+    color: #0056b3;
+}
+
+#MicaPromo p {
+    margin-left: 9vh;
+    padding-bottom: 5vh;
+    height: 5vh;
+    margin-right: 7vh;
+    color: black;
+    font-size: large;
+}
+
+.Packages {
+    background-color: white;
+    align-items: center;
+    color: black;
+    text-shadow: pink;
+    text-align: center;
+    width: 100%;
+}
+
+.PackageScroller {
+    background-color: #214361;
+    color: black;
+    display: grid;
+    grid-auto-flow: column;
+    height: 80vh;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+li {
+    background-size: 20px;
+}
+
+#PackageScroller td img {
+    width: 30px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* About Us Page */
+#AboutUS {
+    color: black;
+}
+
+#AboutUsHeader {
+    background-image: url(http://localhost:3333/?jpg=window-wash.jpg);
+}
+
+#AboutUsHeaderInside {
+    background-image: url("http://localhost:3333/?jpg=cleaningBiege.jpg");
+}
+
+.HeaderTop h1 {
+    font-size: 10vh;
+    color: #082479;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+#AboutUsDetails {
+    margin-left: 2vh;
+    color: black;
+    align-content: center;
+    position: relative;
+}
+
+#AboutUsDetails h2:after {
+    position: absolute;
+    background: rgb(10, 99, 131);
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    border-radius: 2px;
+}
+
+.Wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    height: 10%;
+    width: 70%;
+    background-color: rgba(204, 202, 202, 0.7);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+}
+
+#AboutUsDetails h2 {
+    padding: 0 0 0 20px;
+    position: relative;
+}
+
+
+.subHeading {
+    padding-left: 3%;
+    padding-right: 2%;
+    margin-top: 2%;
+    color: black;
+    align-items: end;
+    width: 36%;
+    vertical-align: middle;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.35);
+    transition: background-color 0.3s ease;
+    text-align: left;
+    background-color: white;
+
+
+}
+
+#CardWrapper {
+    margin-right: 12vh;
+    margin-left: 8vh;
+    padding: 10% auto;
+}
+
+#WhyMica {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    width: 85%;
+    height: 20%;
+
+}
+
+#future {
+    margin-right: 80%;
+    margin-left: 1%;
+    padding-left: 2%;
+    padding-right: 5%;
+    height: 40%;
+    z-index: 0;
+
+}
+
+#futurePic {
+    background-image: url(http://localhost:3333/?jpg=ele_tools2.jpg);
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 4%;
+    padding-right: 12%;
+    padding-left: 40%;
+    margin-bottom: 80%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.35);
+    z-index: -2;
+
+}
+
+#futurePicInside {
+    background-image: url(http://localhost:3333/?jpg=blueishBedroom.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-left: 40%;
+    margin-right: 4%;
+    padding-right: 12%;
+    padding-left: 40%;
+    margin-bottom: 80%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.35);
+    z-index: -2;
+}
+
+#contact {
+    margin-left: 56%;
+    height: 40%;
+}
+
+#contactPic {
+    background-image: url("http://localhost:3333/?jpg=blueBedroom.jpg");
+    background-size: cover;
+    position: absolute;
+    margin-left: 10%;
+    padding-right: 60%;
+    margin-bottom: 90%;
+    height: 25%;
+    border-radius: 20px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.35);
+    z-index: -2;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Registration Page */
+#RegisterForm {
+    background: url(http://localhost:3333/?jpg=blueBedroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.servPics {
+    border-radius: 4%;
+    box-shadow: 0 0 12px rgb(25, 24, 24, 0.4);
+    width: 200px;
+    height: 100px;
+}
+
+
+#wrapperReg {
+    padding-top: 5vh;
+    padding-left: 12vh;
+    padding-right: 7vh;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(226, 226, 226, 0.682);
+    box-shadow: 0 0 12px rgb(25, 24, 24);
+    border-radius: 0px;
+    margin: 8% auto;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.Personal {
+    grid-auto-flow: column;
+    border-spacing: 0;
+
+
+}
+
+.Personal td {
+    background-color: transparent;
+    width: fit-content;
+    padding: 15px;
+    border: none;
+    text-align: left;
+}
+
+#OtherReg td {
+    margin-bottom: 10vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0%;
+    padding-right: 0%;
+
+}
+
+.RegForm {
+    width: 30vh;
+    height: 5vh;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    border: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    outline: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+#passError {
+    color: red;
+    font-size: 12px;
+}
+
+form span {
+    position: relative;
+}
+
+.form_small {
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    width: 6vh;
+    height: 4vh;
+    border-radius: 7px;
+    margin-right: 14px;
+}
+
+.form_address {
+    width: 30vh;
+    height: 5vh;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    padding-left: 5px;
+    border-radius: 7px;
+}
+
+#COD {
+    vertical-align: middle;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+#cardNo {
+    width: 29vh;
+}
+
+#expMn {
+    width: 18vh;
+}
+
+#RegisterButton {
+    border-radius: 7px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Login Page */
+
+
+#bodyLogin {
+    background: url(http://localhost:3333/?jpg=LoginBeige.jpg), url(http://localhost:3333/?jpg=LoginCouch.jpg);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 100%, 50% auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#wrapperLogIn {
+    width: 350px;
+    margin: 13% auto;
+    margin-bottom: 5%;
+    padding: 10px;
+    height: 500px;
+    background-color: rgb(255, 255, 255, 0.35);
+    box-shadow: 0 0 17px rgb(25, 24, 24);
+    border-radius: 20px;
+}
+
+#headingLogIn {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#formLogIn {
+    text-align: center;
+}
+
+#loginbutton {
+    width: 70%;
+}
+
+#formLogIn label {
+    padding-right: 50%;
+}
+
+#formLogIn input {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+#formLogIn span {
+    position: relative;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Painting/ Cleaning/ Electrical Services Forms */
+body.formbackCover {
+    background-image: url(http://localhost:3333/?png=BackGround.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.formContainer {
+    margin: 8% auto;
+    padding: 40px;
+    box-shadow: 0 0 10px rgb(25, 24, 24);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.70);
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.formContainer input[type="radio"] {
+    appearance: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #ced3d6fd;
+    box-shadow: 0 0 5px rgb(104, 100, 100);
+
+}
+
+.formContainer input[type="radio"]::after {
+    content: attr(label);
+    color: #070202d4;
+    padding: 1px
+}
+
+.formContainer input[type="radio"]:checked {
+    background-color: #c3bb93;
+
+    border-color: #c3bb93;
+}
+
+.formContainer input[type="radio"]:checked:hover {
+    background-color: #c3bb93;
+    border-color: #c3bb93;
+}
+
+.formContainer input[type="radio"]:hover {
+    background-color: #c3bb93;
+    box-shadow: 0 0 10px rgb(25, 24, 24);
+
+}
+
+.formContainer select {
+    background-color: #ced3d6fd;
+    width: 15vh;
+    height: 4vh;
+}
+
+.formContainer select:hover {
+    background-color: #c3bb93;
+
+}
+
+.formContainer select option {
+    width: 1005vh;
+    height: 1100000vh;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.checkbox li {
+    list-style: none;
+    text-align: left;
+    width: 500px;
+    background-color: #ced3d6fd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(104, 100, 100);
+    margin: 8px;
+    padding-top: 10px;
+    border: none;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.checkbox li:hover {
+    background-color: #c3bb93;
+}
+
+#dailyQuestions,
+#biNWeeklyQuestions,
+#specificQuestions {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Registered Services */
+#rscontainer {
+    padding-bottom: 5%;
+    margin: auto;
+    background-image: url('http://localhost:3333/?png=image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left, top left;
+
+}
+
+#RegHeading {
+
+    font-size: 10vh;
+}
+
+#rscontainer h1 {
+    margin: 3%;
+    padding-top: 3%;
+    padding-left: 12%;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.services-container {
+    margin: auto;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 0%;
+}
+
+.services-container h2 {
+    padding: 3%;
+    padding-bottom: 0%;
+
+}
+
+.services-container p {
+    color: black;
+}
+
+
+.services-container td {
+    padding: 1%;
+    border: none;
+    width:500px;
+    border-radius: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.services-container ul li {
+    list-style: none;
+    text-align: left;
+    max-width: 100%; 
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* User Profile Page */
+
+#profilecontainer {
+
+    background-image: url(http://localhost:3333/?png=image2.png);
+    background-size: cover;
+}
+
+#profilecontainer h2 {
+
+    padding-left: 48%;
+    padding-top: 3%;
+    font-size: 10vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#info-container {
+    margin-left: 21%;
+    margin-right: 10%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    width: 40%;
+
+}
+
+#info-container h2 {
+    margin: 1em 0 .6em 0;
+    padding: 0 0 0 20px;
+    position: relative;
+    font-size: 4vh;
+
+}
+
+#info-container h2:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.9%;
+    border-radius: 2px;
+    background: #214361;
+}
+
+
+
+#userViewServicesButton {
+
+    height: 7vh;
+    margin-left: 0%;
+    width: 27vh;
+}
+
+
+.userField {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.userField input[type="text"],
+.userField input[type="password"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.userField_Small {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.userField_Small input[type="text"],
+.userField_Small input[type="password"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}

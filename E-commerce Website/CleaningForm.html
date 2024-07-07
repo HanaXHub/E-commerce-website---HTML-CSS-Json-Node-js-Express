@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mica Cleaning Form</title>
+    <link rel="stylesheet" href="http://localhost:3333/?css=StyleSheet.css">
+    <script type="text/javascript" src="http://localhost:3333/?js=main.js"></script>
+
+</head>
+
+<body class="formbackCover">
+    <div class="navBar">
+        <ul>
+            <li> <a href="AccountHome"> <img src="http://localhost:3333/?png=goldLogo.png" /></a></li>
+            <li class="menu"><a href="AccountHome">
+                    <h4>Home</h4>
+                </a></li>
+            <li class="menu"><a href="AccountServices">
+                    <h4>Services</h4>
+                </a></li>
+            <li class="menu"><a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a></li>
+            <li class="menu"><a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a></li>
+            <li><img id="profpic" src="http://localhost:3333/?png=user_icon.png" onclick="viewProfile()" /></li>
+            <li><button class="buttonSmall" onclick="logout()">Log Out</button></li>
+        </ul>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="formContainer">
+        <form method="post" class="mainForm" onsubmit="return confirmSubmission()">
+
+            <h2>Cleaning Consultation form</h2>
+            <h3><i>Please fill this form to provide information about the service you would like</i></h3>
+            <hr />
+            <br /><label class="questionsLabel"> How often would you like cleaning?</label><br /><br />
+            <input type="radio" name="cleaningFrequency" value="Daily Cleaning" label="Daily Cleaning"
+                onclick="toggleQuestions('dailyQuestions')" required />
+            <input type="radio" name="cleaningFrequency" value="Weekly Cleaning" label="Weekly Cleaning"
+                onclick="toggleQuestions('biNWeeklyQuestions')" />
+            <input type="radio" name="cleaningFrequency" value="Bi-Weekly Cleaning" label="Bi-Weekly Cleaning"
+                onclick="toggleQuestions('biNWeeklyQuestions')" />
+            <input type="radio" name="cleaningFrequency" value="Special Occasion/Specific Cleaning" label="Special Occasion/Specific Cleaning"
+                onclick="toggleQuestions('specificQuestions')" />
+            <br />
+            <br />
+
+            <label class="questionsLabel">How many cleaners would you like?</label><br /><br />
+            <input type="radio" name="cleanerCount" label="1" value="One Cleaner" required />
+            <input type="radio" name="cleanerCount" label="2" value="Two Cleaner" />
+            <input type="radio" name="cleanerCount" label="3" value="Three Cleaner" />
+            <input type="radio" name="cleanerCount" label="4" value="Four Cleaner" />
+            <br />
+            <br />
+
+            <div id="dailyQuestions">
+                <label class="questionsLabel"> Choose a convenent Time for you</label> <br /><br />
+                <input type="radio" name="timings" label="8am" value="Eight am" />
+                <input type="radio" name="timings" label="9am" value="Nine am" />
+                <input type="radio" name="timings" label="10am" value="Ten am" />
+                <input type="radio" name="timings" label="11am" value="Eleven am" />
+                <input type="radio" name="timings" label="12pm" value="Tweleve pm" />
+                <input type="radio" name="timings" label="1pm" value="One pm" />
+                <input type="radio" name="timings" label="2pm" value="Two pm" />
+                <input type="radio" name="timings" label="3pm" value="Three pm" />
+                <input type="radio" name="timings" label="4pm" value="Four pm" />
+                <input type="radio" name="timings" label="5pm" value="Five pm" />
+                <br />
+                <br />
+                <label class="questionsLabel">How many hours would you require per session?</label><br /><br />
+                <input type="radio" name="sessionHoursD" label="1-3" value="One To Three Hr" />
+                <input type="radio" name="sessionHoursD" label="4-6" value="Four To Six Hr" />
+                <input type="radio" name="sessionHoursD" label="7-9" value="Seven To Nine Hr" />
+                <input type="radio" name="sessionHoursD" label="10-12" value="Ten To Twele Hr" />
+                <input type="radio" name="sessionHoursD" label="Full Day" value="Full Day Hr" />
+                <br /><br />
+            </div>
+
+            <div id="biNWeeklyQuestions">
+                <label class="questionsLabel"> Choose the specifc days of the week</label><br /><br />
+                <input type="radio" name="dayOfWeek" label="Sunday" value="Sunday" />
+                <input type="radio" name="dayOfWeek" label="Monday" value="Monday" />
+                <input type="radio" name="dayOfWeek" label="Tuesday" value="Tuesday" />
+                <input type="radio" name="dayOfWeek" label="Wednesday" value="Wednesday" />
+                <input type="radio" name="dayOfWeek" label="Thursday" value="Thursday" />
+                <input type="radio" name="dayOfWeek" label="Friday" value="Friday" />
+                <input type="radio" name="dayOfWeek" label="Saturday" value="Saturday" />
+                <br />
+                <br />
+                <label class="questionsLabel"> How many hours would you require per session?</label><br /><br />
+                <input type="radio" name="sessionHoursB" label="1-3" value="One To Three Hr" />
+                <input type="radio" name="sessionHoursB" label="4-6" value="Four To Six Hr" />
+                <input type="radio" name="sessionHoursB" label="7-9" value="Seven To Nine Hr" />
+                <input type="radio" name="sessionHoursB" label="10-12" value="Ten To Twele Hr" />
+                <input type="radio" name="sessionHoursB" label="Full Day" value="Full Day Hr" />
+                <br /><br />
+            </div>
+
+            <div id="specificQuestions">
+
+                <label class="questionsLabel">These Services Special Services which will have a higher rate and are an
+                    automatic Full Day Services</label> <br /><br />
+                <ul class="checkbox">
+                    <li><input type="checkbox" name="specialOptions" value="Deep Cleaning (All Surfaces)">Deep Cleaning (All Surfaces)</li>
+                    <li><input type="checkbox" name="specialOptions" value="Intense Floor Cleaning and
+                        Polishing">Intense Floor Cleaning and
+                        Polishing</li>
+                    <li><input type="checkbox" name="specialOptions" value="Move-in/Move-out Cleaning">Move-in/Move-out Cleaning</li>
+                    <li><input type="checkbox" name="specialOptions" value="Post-construction
+                        Cleaning">Post-construction
+                        Cleaning</li>
+                    <li><input type="checkbox" name="specialOptions" value="Special Cleaning
+                        (Ceiling/Unique items)">Special Cleaning
+                        (Ceiling/Unique items)</li>
+                    <li><input type="checkbox" name="specialOptions" value="Outdoor Intense Cleaning"> Outdoor Intense Cleaning
+                    </li>
+
+                </ul>
+                <br />
+                <label name="day" class="questionsLabel">Select a day:</label>
+                <input type="date" class="buttonMain" name="dateForSpecialCleaning">
+                <br /><br />
+
+            </div>
+
+            <br />Extra comments<br /><br />
+            <textarea name="commentForFixtures" rows="6" cols="80"></textarea><br />
+
+            <label class="questionsLabel">Method Of Payment</label>
+            <select class="buttonMain" name="paymentMethod">
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+            <br /><br />
+
+            <h4><b> An email will be sent to you to confirm your appointment.</b></h4>
+
+            <br /><input class="buttonMain" type="submit" value="Submit">
+            <input class="buttonMain" type="reset" value="Reset">
+            <br /> <br />
+
+
+
+        </form>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="footer">
+        <ul>
+            <li> <img src="http://localhost:3333/?png=goldLogo.png" class="logoFooter" /> </li>
+
+            <li>
+                <h4>Links</h4>
+                <a href="AccountHome">
+                    <h4>Home</h4>
+                </a>
+                <a href="AccountServices">
+                    <h4>Services</h4>
+                </a>
+                <a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a>
+                <a href="UserProfile">
+                    <h4>My Profile</h4>
+                </a>
+                <a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a>
+            </li>
+            <li>
+                <h4>Follow Us</h4>
+                <img class="icons" src="http://localhost:3333/?png=social.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_1.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_2.png" />
+            </li>
+            <li>
+                <h4>Contact Us</h4>
+                <p>+97150-321-5321 <br />support@mica.com <br />ABC Street,JBR<br />Dubai,UAE </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

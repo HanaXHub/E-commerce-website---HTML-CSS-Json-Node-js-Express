@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mica Profile</title>
+    <link rel="stylesheet" href="http://localhost:3333/?css=StyleSheet.css">
+    <script type="text/javascript" src="http://localhost:3333/?js=main.js"></script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li> <a href="AccountHome"> <img src="http://localhost:3333/?png=goldLogo.png" /></a></li>
+            <li class="menu"><a href="AccountHome">
+                    <h4>Home</h4>
+                </a></li>
+            <li class="menu"><a href="AccountServices">
+                    <h4>Services</h4>
+                </a></li>
+            <li class="menu"><a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a></li>
+            <li class="menu"><a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a></li>
+            <li><img id="profpic" src="http://localhost:3333/?png=user_icon.png" onclick="viewProfile()" /></li>
+            <li><button class="buttonSmall" onclick="logout()">Log Out</button></li>
+        </ul>
+    </div>
+
+    <div class="container" id="profilecontainer">
+        <h2 id="myName"> Welcome Back! </h2>
+        <div id="info-container">
+
+            <h2>User Information</h2>
+            <br />
+            <div class="userField">
+                <label for="firstName">First Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="firstName" value="John" pattern="^[a-z|A-Z]{2,}$" disabled>
+            </div>
+            <div class="userField">
+                <label for="lastName">Last Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="lastName" value="Doe" pattern="^[a-zA-Z\.]{2,}$" disabled>
+            </div>
+            <div class="userField">
+                <label for="phone">Phone Number:</label>&nbsp;
+                <input type="text" id="phone" value="+971-5X-XXX-XXXX" pattern="^\+971-5[0-9]{8}$" disabled>
+            </div>
+            <div class="userField">
+                <label for="email">Email Address:</label>&nbsp;&nbsp;
+                <input type="text" id="email" value="john@gmail.com" disabled>
+            </div>
+            <div class="userField">
+                <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="password" value="************" disabled>
+            </div>
+            <br />
+            <h2>Payment Information</h2>
+            <br />
+            <div class="userField">
+                <label for="cardNumber">Card Number:</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" id="cardNumber" value="** ** ** **66" pattern="^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$"
+                    disabled>
+            </div>
+            <div class="userField_Small">
+                <label for="expiryDate">Expiry Date:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="expiryDate" value="--/--"  disabled>
+                <label for="CVV_">CVV:</label>
+                <input type="text" id="CVV_" pattern="\d{3}"  value="null" disabled>
+
+            </div>
+            <div> </div>
+            <br />
+            <h2>Address Information</h2>
+            <br />
+            <div class="userField_Small">
+                <label for="addressEmirate">Emirate:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="addressEmirate" value="/20" pattern="\d{3}" disabled>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="addressCity">City :</label>
+                <input type="text" id="addressCity" value="---" disabled>
+            </div>
+            <br />
+            <button class="buttonSmall" id="userViewServicesButton" onclick="viewRegisteredServices()">View My
+                Services</button>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li> <img src="http://localhost:3333/?png=goldLogo.png" class="logoFooter" /> </li>
+
+            <li>
+                <h4>Links</h4>
+                <a href="AccountHome">
+                    <h4>Home</h4>
+                </a>
+                <a href="AccountServices">
+                    <h4>Services</h4>
+                </a>
+                <a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a>
+                <a href="UserProfile">
+                    <h4>My Profile</h4>
+                </a>
+                <a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a>
+            </li>
+            <li>
+                <h4>Follow Us</h4>
+                <img class="icons" src="http://localhost:3333/?png=social.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_1.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_2.png" />
+            </li>
+            <li>
+                <h4>Contact Us</h4>
+                <p>+97150-321-5321 <br />support@mica.com <br />ABC Street,JBR<br />Dubai,UAE </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

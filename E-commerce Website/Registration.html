@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mica Registration</title>
+    <link rel="stylesheet" href="http://localhost:3333/?css=StyleSheet.css">
+    <script type="text/javascript" src="http://localhost:3333/?js=main.js"></script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li><a href="Home"><img src="http://localhost:3333/?png=goldLogo.png" /></a></li>
+            <li class="menu">
+                <a href="Home">
+                    <h4>Home</h4>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="Services">
+                    <h4>Services</h4>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="Aboutus">
+                    <h4>About Us</h4>
+                </a>
+            </li>
+            <li class="signin"><button class="buttonSmall" onclick="login()">Log In</button></li>
+        </ul>
+    </div>
+    <div id="RegisterForm">
+
+        <div id="wrapperReg">
+            <h1>Sign Up</h1>
+            <hr>
+            <form onsubmit="return validatePassword()" method="POST" action="Registration">
+                <table class="Personal">
+                    <tr>
+                        <td>
+                            First Name: <br> <input class="RegForm" id="fName" name="fName" type="text"
+                                placeholder="John" pattern="^[a-z|A-Z]{2,}$" required>
+                        </td>
+                        <td>
+                            Last Name: <br><input class="RegForm" id="lName" name="lName" type="text" placeholder="Doe"
+                                required pattern="^[a-zA-Z\.]{2,}$">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone Number: <br> <input class="RegForm" id="phoneNo" name="phoneNo"
+                                title="+971-55XXXXXXXX" type="text" placeholder="+971-5XXXXXXXX" value="+971-5"
+                                pattern="^\+971-5[0-9]{8}$" required>
+                        </td>
+                        <td>
+                            Email Address: <br> <input class="RegForm" id="emailId" name="Email"
+                                title="something@something.com" type="text" placeholder="xyz@example.com"
+                                pattern="^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            New Password: <br><input
+                                title="Password must be between 6-15 characters and must include atleast one lowercase, uppercase, number, and special character"
+                                class="RegForm" id="password" name="Password" type="password" placeholder="Password"
+                                required>
+                        </td>
+                        <td>
+                            Confirm Password: <br><input class="RegForm" id="passwordC" name="passwordC" type="password"
+                                placeholder="Confirm Password" required>
+                        </td>
+                    </tr>
+                </table>
+                <span id="passError" name="passError"></span>
+                <br>
+                <hr>
+                <table class="Personal" id="OtherReg">
+                    <tr>
+                        <td>
+                            Emirate: <br>
+                            <select id="Emirate" name="Emirate" class="form_address"></select>
+                        </td>
+                        <td>
+                            City: <br>
+                            <select id="City" name="City" class="form_address"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Card Number: <br /><input class="RegForm" id="cardNo" name="cardNo" type="text"
+                                placeholder="XXXX-XXXX-XXXX-XXXX" pattern="^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$">
+                        </td>
+                        <td>
+                            CVV_: &nbsp;&nbsp;&nbsp;Expiry Date: <br /><input class="form_small" id="CVV_" name="CVV_"
+                                type="text" placeholder="XXX" pattern="\d{3}">
+                            <input class="RegForm" id="expMn" name="expMn" type="month" placeholder="Expiry Month" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="RegForm" id="COD" name="COD" type="checkbox"> Use Cash On Delivery For Now
+                        </td>
+                    </tr>
+                </table>
+                <button class="buttonSmall" id="RegisterButton" type="submit">Register</button>
+                <br><br>
+                <p>
+                    Already have an account? <a href="Login">Click here to sign in</a>.
+                </p>
+                <br><br>
+
+            </form>
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li> <img src="http://localhost:3333/?png=goldLogo.png" class="logoFooter" /> </li>
+
+            <li>
+                <h4>Links</h4>
+                <a href="Home">
+                    <h4>Home</h4>
+                </a>
+                <a href="Services">
+                    <h4>Services</h4>
+                </a>
+                <a href="Aboutus">
+                    <h4>About Us</h4>
+                </a>
+            </li>
+            <li>
+                <h4>Follow Us</h4>
+                <img class="icons" src="http://localhost:3333/?png=social.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_1.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_2.png" />
+            </li>
+            <li>
+                <h4>Contact Us</h4>
+                <p>+97150-321-5321 <br /><br />support@mica.com <br /><br />ABC Street,JBR<br /><br />Dubai,UAE </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

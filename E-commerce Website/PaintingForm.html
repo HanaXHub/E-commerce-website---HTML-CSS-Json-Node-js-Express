@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mica Painting Services</title>
+    <link rel="stylesheet" href="http://localhost:3333/?css=StyleSheet.css">
+    <script type="text/javascript" src="http://localhost:3333/?js=main.js"></script>
+</head>
+
+<body class="formbackCover">
+    <div class="navBar">
+        <ul>
+            <li> <a href="AccountHome"> <img src="http://localhost:3333/?png=goldLogo.png" /></a></li>
+            <li class="menu"><a href="AccountHome">
+                    <h4>Home</h4>
+                </a></li>
+            <li class="menu"><a href="AccountServices">
+                    <h4>Services</h4>
+                </a></li>
+            <li class="menu"><a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a></li>
+            <li class="menu"><a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a></li>
+            <li><img id="profpic" src="http://localhost:3333/?png=user_icon.png" onclick="viewProfile()" /></li>
+            <li><button class="buttonSmall" onclick="logout()">Log Out</button></li>
+        </ul>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="formContainer">
+        <form method="POST" action="PaintingForm" onsubmit="return confirmSubmission()">
+            <h2>Painting Consultation form</h2>
+            <h3><i>Please fill this form to provide information about the service you would like</i></h3>
+            <hr />
+
+            <b> Select Number of rooms you want to paint (Leave it Empty if you dont require this service)
+            </b><br /><br />
+
+            <input type="radio" name="numOfRoom" value="One Room" label="1" />
+            <input type="radio" name="numOfRoom" value="Two Room" label="2" />
+            <input type="radio" name="numOfRoom" value="Three Room" label="3" />
+            <input type="radio" name="numOfRoom" value="Four Room" label="4" />
+            <input type="radio" name="numOfRoom" value="Five Room" label="5" />
+            <input type="radio" name="numOfRoom" value="More Than 6 Room" label="6+" /><br /><br />
+
+            Interior Painting Services<br />
+            <ul class="checkbox">
+                <li><input type="checkbox" name="IndoorPainting" value="Cabinet Painting">Cabinet Painting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Kitchen Painting">Kitchen Painting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Trim and Baseboard Painting">Trim and Baseboard Painting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Door Painting (interior)">Door Painting (interior)</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Ceiling Painting">Ceiling Painting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Wall Repainting">Wall Repainting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Accent Wall Painting">Accent Wall Painting</li>
+                <li><input type="checkbox" name="IndoorPainting" value="Staircase Painting">Staircase Painting</li>
+
+                <br />Exterior Painting Services<br /><br />
+
+                <li><input type="checkbox" name="OutdoorPainting" value="Exterior House Painting">Exterior House Painting</li>
+                <li><input type="checkbox" name="OutdoorPainting" value="Deck/Porch Painting/Staining">Deck/Porch Painting/Staining</li>
+                <li><input type="checkbox" name="OutdoorPainting" value="Fence Painting/Staining">Fence Painting/Staining</li>
+                <li><input type="checkbox" name="OutdoorPainting" value="Garage Painting">Garage Painting</li>
+                <li><input type="checkbox" name="OutdoorPainting" value="Roof Painting">Roof Painting</li>
+
+
+                <br />Specialty Painting Services<br /><br />
+
+                <li><input type="checkbox" name="SpecialPainting" value="Wallpaper Installation/Removal">Wallpaper Installation/Removal</li>
+                <li><input type="checkbox" name="SpecialPainting" value="Custom Color Consultation">Custom Color Consultation</li>
+            </ul>
+            <br />Extra comments<br /><br />
+            <textarea name="commentForFixtures" rows="6" cols="80"></textarea><br />
+
+            <br /><label>Select a Date and Time:</label>
+            <input type="datetime-local" class="buttonMain" name="consultTime" required><br />
+
+            <label class="questionsLabel">Method Of Payment </label>
+            <select class="buttonMain" name="paymentMethod" required>
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+            <br /><br />
+            <p id="cost"></p>
+
+            <h4><b> An email will be sent to you to confirm your appointment.</b></h4>
+
+            <br /><input class="buttonMain" type="submit" value="Submit">
+            <input class="buttonMain" type="reset" value="Reset">
+            <br /> <br />
+
+
+        </form>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="footer">
+        <ul>
+            <li> <img src="http://localhost:3333/?png=goldLogo.png" class="logoFooter" /> </li>
+
+            <li>
+                <h4>Links</h4>
+                <a href="AccountHome">
+                    <h4>Home</h4>
+                </a>
+                <a href="AccountServices">
+                    <h4>Services</h4>
+                </a>
+                <a href="AccountAboutUs">
+                    <h4>About Us</h4>
+                </a>
+                <a href="UserProfile">
+                    <h4>My Profile</h4>
+                </a>
+                <a href="RegisteredServices">
+                    <h4>My Services</h4>
+                </a>
+            </li>
+            <li>
+                <h4>Follow Us</h4>
+                <img class="icons" src="http://localhost:3333/?png=social.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_1.png" />
+                <img class="icons" src="http://localhost:3333/?png=social_2.png" />
+            </li>
+            <li>
+                <h4>Contact Us</h4>
+                <p>+97150-321-5321 <br />support@mica.com <br />ABC Street,JBR<br />Dubai,UAE </p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

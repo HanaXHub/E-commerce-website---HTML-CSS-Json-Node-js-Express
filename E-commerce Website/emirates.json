@@ -1,0 +1,80 @@
+{
+    "emirates": [
+        {
+            "id": 1,
+            "name": "Abu Dhabi",
+            "cities": [
+                "Al Khalidiyah",
+                "Al Reem Island",
+                "Al Mushrif",
+                "Al Jimi",
+                "Al Muwaiji",
+                "Al Sarooj"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Dubai",
+            "cities": [
+                "Downtown Dubai",
+                "Bur Dubai",
+                "Deira",
+                "Al Barsha",
+                "Dubai Internet City",
+                "Dubai Motor City",
+                "Dubai Media City",
+                "Jebel Ali Village",
+                "Jumeriah",
+                "Jebel Ali Free Zone"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Sharjah",
+            "cities": [
+                "Al Qasimia",
+                "Al Majaz",
+                "Al Nahda",
+                "Al Rashidiya",
+                "Al Jurf",
+                "Ajman Marina"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Ras Al Khaimah",
+            "cities": [
+                "Al Nakheel",
+                "Al Hamra",
+                "Mina Al Arab"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Fujairah",
+            "cities": [
+                "Al Hayl",
+                "Dibba Al-Fujairah",
+                "Masafi"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Umm Al Quwain",
+            "cities": [
+                "Old Town",
+                "Al Salam City",
+                "Mistral"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Ajman",
+            "cities": [
+                "Al Rashidiya",
+                "Al Jurf",
+                "Ajman Marina"
+            ]
+        }
+    ]
+}
